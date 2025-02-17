@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>FlashLearn</title>
+</head>
+<body>
+
+    <!-- ============================================ SIDEBAR ============================================ -->
+
+    <section class="sidebar">
+        <div class="logo-container">
+            <i class="uil uil-brain"></i>
+            <h1>FlashLearn</h1>
+        </div>
+
+        <div class="profile-container">
+
+            <div class="profile">
+                <div class="img-container">
+                    <img src="resources/pfp.jpg" alt="">
+                </div>
+    
+                <div class="username-role">
+                    <h3>Sanico</h3>
+                    <p>Student</p>
+                </div>
+            </div>
+
+            <a href="edit-profile.html" class="settings">
+                <i class="uil uil-cog"></i>
+            </a>
+            
+        </div>
+
+        <div class="sidebar-nav">
+            <a href="home.html" class="nav-link">
+                <i class="uil uil-home"></i>
+                <h4>Home</h4>
+            </a>
+            <a href="library.html" class="nav-link">
+                <i class="uil uil-books"></i>
+                <h4>My Library</h4>
+            </a>
+        </div>
+
+        <div class="learn">
+            <h4>Learn</h4>
+        </div>
+
+        <div class="sidebar-nav">
+            <a href="explore.html" class="nav-link">
+                <i class="uil uil-compass"></i>
+                <h4>Explore</h4>
+            </a>
+            <a href="tutor.html" class="nav-link">
+                <i class="uil uil-comment"></i>
+                <h4>AI Tutor</h4>
+            </a>
+        </div>
+
+        <div class="create">
+            <i class="uil uil-pen"></i>
+            <h4>Create</h4>
+        </div>
+
+    </section>
+
+    <!-- ============================================ MAIN ============================================ -->
+
+    <section class="main">
+
+    <!-- ============================================ HEADER ============================================ -->
+
+    <section class="header">
+        <div class="heading">
+            <h1>Edit Informations</h1>
+            <h4>You can start exploring FlashLearn using the menu on the left</h4>
+        </div>
+
+        <div class="search-logout-container">
+            <a href="#" class="logout">
+                <h3>Logout</h3>
+                <i class="uil uil-signout"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================ MAIN CONTENT ============================================ -->
+
+
+    <section class="main-content-container flex-center">
+
+        <section class="edit-profile-container">
+            <div class="profile-pictures">
+                <h4>Profile Picture</h4>
+                <div class="profiles">
+                    <div class="icon-container">
+                        <i class="uil uil-plus-circle"></i>
+                    </div>
+                    <div class="profile-imgs">
+                        <div class="img-container  border-active">
+                            <img src="resources/pfp.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="resources/DevilmanCrybaby.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="resources/28e710d424d449e17a6125c8edeac628.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="resources/images (2).jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="resources/avatar4.jpg" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <form action="" class="user-informations">
+                <div class="name">
+                    <div class="input-container">
+                        <label for="">FirstName</label>
+                        <input type="text" name="firstname" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="">LastName</label>
+                        <input type="text" name="firstname" required>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="">Biography</label>
+                    <textarea class="Biography" type="text" name="firstname" placeholder="Write something about yourself..." required></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="">Username</label>
+                    <input type="text" name="firstname" required>
+                </div>
+                <div class="input-container">
+                    <label for="">Email</label>
+                    <input type="text" name="firstname" required>
+                </div>
+                <div class="input-container">
+                    <label for="">Birth Date</label>
+                    <input type="date" name="firstname" required>
+                </div>
+                <div class="input-container">
+                    <label for="">Account Type</label>
+                    <select name="" id="">
+                        <option value="Admin">Admin</option>
+                        <option value="Admin">Student</option>
+                    </select>
+                </div>
+                <Button class="save-btn">Save Changes</button>
+                
+            </form>
+        </section>
+ 
+
+        
+
+
+
+    </section>
+
+
+    </section>
+
+
+ 
+
+
+      <script src="js/card.js"></script>
+      <script src="js/script.js"></script>
+</body>
+</html>

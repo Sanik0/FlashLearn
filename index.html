@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.1/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>FlashLearn</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="container logo">
+            <i class="uil uil-brain"></i>
+            <h1>FlashLearn</h1>
+        </a>
+        
+        <!-- <nav>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Quizzes</a></li>
+            </ul>
+        </nav> -->
+
+        <div class="searchbar">
+            <form action="/search" method="get">
+                <i class="uil uil-search"></i>
+                <input type="text" id="search" name="query" placeholder="Search for topics...">
+                <!-- <button type="submit">Search</button> -->
+            </form>
+        </div>
+
+        <!-- <div class="login-signup">
+            <a href="" class="login-link">Login</a>
+            <a href="" class="signup-btn">Sign Up</a>
+        </div> -->
+        <div class="icon-container" onclick="DropdownMenu()">
+            <i class="uil uil-bars"></i>
+        </div>
+    </header>
+    <div class="dropdown-nav" id="DropdownMenu">
+        <a href="#" class="nav-item">
+            Home
+        </a>
+        <a href="#" class="nav-item">
+            Blog
+        </a>
+        <a href="#" class="nav-item">
+            Contact
+        </a>
+        <a href="#" class="nav-item">
+            Flashcards
+        </a>
+        <a href="#" class="nav-item sign-nav">
+            Log in
+        </a>
+        <a href="#" class="nav-item sign-nav">
+            Sign up
+        </a>
+    </div>
+
+    <!-- ============================================ FILE DRAG AND DROP ============================================ -->
+
+    <section class="file-container">
+        <div class="headings">
+            <h1>Study better with the help of AI</h1>
+            <h3>Generate quiz questions, flashcards, and answers with AI from your documents.</h3>
+        </div>  
+        <div class="file-drop-area" id="drop-area">
+            <i class="uil uil-file-upload"></i>
+            <h3>Drag and drop your file here or <span>click to upload</span></h3>
+            <input type="file" id="file-input" multiple>
+        </div>
+    </section>
+
+    <!-- ============================================ CALL TO ACTION ============================================ -->
+
+    <div class="cta-container">
+        <div class="img-container">
+            <img src="resources/rb_3896.png" alt="">
+
+        </div>
+        
+        <div class="headings">
+            <h1>Quizzes, <span>tests</span> & flashcards</h1>
+            <h3>Use our AI test generator to instantly create quizzes, flashcards, and assessments from your existing content.
+                AI-Powered. Upload any file (such as PDFs, DOCs and PPTs) to transform them into comprehensive quizzes.
+            </h3>
+            <a href="#" class="cta-btn">Start Learning Now</a>
+        </div>
+    </div>
+
+    <!-- ============================================ WHAT WE OFFER ============================================ -->
+
+    <section class="offers">
+        <div class="headings">
+            <h1>What We Offer</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur </h3>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="resources/quiz_17898151.png" alt="">
+                </div>
+                <div class="texts">
+                    <h1>Personalized Quizzes</h1>
+                    <h3>Learn smarter. Enjoy AI-generated quizzes, flashcards, and notes tailored to your unique learning needs. Save time, boost retention, and ace your exams with ease.
+                    </h3>
+                </div>
+            </div>
+           
+            <div class="card">
+                <div class="img-container">
+                    <img src="resources/artificial-intelligence_4630645.png" alt="">
+                </div>
+                <div class="texts">
+                    <h1>AI Generated Learning</h1>
+                    <h3>Elevate your teaching with AI-powered quiz, assessment, and exam generation. Save time on content creation, grading, and enhance student engagement.
+                    </h3>
+                </div>
+            </div>
+           
+            <div class="card">
+                <div class="img-container">
+                    <img src="resources/games_18302536.png" alt="">
+                </div>
+                <div class="texts">
+                    <h1>Engaging Quizzes</h1>
+                    <h3>Elevate your teaching with AI-powered quiz, assessment, and exam generation. Save time on content creation, grading, and enhance student engagement.
+                    </h3>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- ============================================ TESTIMONIALS ============================================ -->
+
+    <section class="testimonials">
+        <div class="headings">
+            <h1>The Word on <span>FlashLearn</span></h1>
+            <h3>What our client says about us</h3>
+        </div>
+        <div class="quote-icon">
+            <h1></h1>
+        </div>
+
+        <div class="carousel-container">
+            
+
+            <div class="swiperTestimonial">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="carousel">
+                        <div class="card1">
+                           <div class="texts">
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                  <br><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                              </h3>
+                              </div>
+                              <div class="client">
+                                  <div class="img-container">
+                                      <img src="resources/pexels-edmond-dantes-4342401.jpg" alt="">
+                                  </div>
+                                  <div class="client-name-role">
+                                      <h3>Edmund Freud</h3>
+                                      <h3 class="name">Educator</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel">
+                        <div class="card1">
+                           <div class="texts">
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                  <br><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                              </h3>
+                              </div>
+                              <div class="client">
+                                  <div class="img-container">
+                                      <img src="resources/pexels-edmond-dantes-4342401.jpg" alt="">
+                                  </div>
+                                  <div class="client-name-role">
+                                      <h3>Edmund Freud</h3>
+                                      <h3 class="name">Educator</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel">
+                        <div class="card1">
+                           <div class="texts">
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                  <br><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                              </h3>
+                              </div>
+                              <div class="client">
+                                  <div class="img-container">
+                                      <img src="resources/pexels-edmond-dantes-4342401.jpg" alt="">
+                                  </div>
+                                  <div class="client-name-role">
+                                      <h3>Edmund Freud</h3>
+                                      <h3 class="name">Educator</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel">
+                        <div class="card1">
+                           <div class="texts">
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                  <br><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                              </h3>
+                              </div>
+                              <div class="client">
+                                  <div class="img-container">
+                                      <img src="resources/pexels-edmond-dantes-4342401.jpg" alt="">
+                                  </div>
+                                  <div class="client-name-role">
+                                      <h3>Edmund Freud</h3>
+                                      <h3 class="name">Educator</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel">
+                        <div class="card1">
+                           <div class="texts">
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                  <br><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                              </h3>
+                              </div>
+                              <div class="client">
+                                  <div class="img-container">
+                                      <img src="resources/pexels-edmond-dantes-4342401.jpg" alt="">
+                                  </div>
+                                  <div class="client-name-role">
+                                      <h3>Edmund Freud</h3>
+                                      <h3 class="name">Educator</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+                
+        </div>
+
+    </section>
+
+    <!-- ============================================ FREQUENTLY ASKED QUESTIONS ============================================ -->
+
+    <section class="faq-container">
+        <div class="texts">
+            <h1>Any Questions? We Got You.</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</h3>
+            <a href="#">More FAQs<i class="uil uil-arrow-right"></i></a>
+        </div>
+
+        <div class="faq-questions">
+
+            <div class="question">
+                <div class="q">How does FlashLearn work? <h3 class="plus">+</h3> <h3 class="minus">-</h3></div>
+                <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e</div>
+            </div> 
+            
+            <div class="question">
+                <div class="q">What can i use it for?<h3 class="plus">+</h3> <h3 class="minus">-</h3></div>
+                <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e</div>
+            </div> 
+            
+            <div class="question">
+                <div class="q">How do i make flashcards? <h3 class="plus">+</h3> <h3 class="minus">-</h3></div>
+                <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e</div>
+            </div> 
+            
+            <div class="question">
+                <div class="q">How do i upload files?<h3 class="plus">+</h3> <h3 class="minus">-</h3></div>
+                <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e</div>
+            </div> 
+            
+ 
+            
+
+        </div>
+
+    </section>
+
+    <!-- ============================================ BLOG POSTS ============================================ -->
+
+    <section class="blog">
+        <div class="heading">
+            <h1>Latest Blog Post</h1>
+        </div>
+
+        <div class="cards-container">
+
+            <a href="#" class="card">
+                <div class="img-container">
+                    <img src="resources/pexels-zen-chung-5538616.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h6>Dec 10. 2024</h6>
+                    <h2>How to improve learning with the help of AI</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                </div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="img-container">
+                    <img src="resources/pexels-cottonbro-4778424.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h6>Dec 15. 2024</h6>
+                    <h2>How to improve focus while studying for exams</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse  adipiscing elit, sed do eiusmod </p>
+                </div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="img-container">
+                    <img src="resources/pexels-julia-m-cameron-4144923.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h6>Dec 20. 2024</h6>
+                    <h2>Study techniques to use to ace your exams</h2>
+                    <p>Lorem ipsum dolor  Duis aute irure dolor in reprehenderit in voluptate velit esse sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+      <!-- ============================================ CALL TO ACTION ============================================ -->
+
+      <div class="cta-container">
+        <div class="headings">
+            <h1>Learning Has Never Been <span>Easier!</span></h1>
+            <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            </h3>
+            <a href="#" class="cta-btn">Sign up for free</a>
+        </div>
+
+        <div class="img-container">
+            <img src="resources/rb_81526.png" alt="">
+
+        </div>
+        
+        
+    </div>
+
+      <!-- ============================================ FOOTER ============================================ -->
+
+      <footer>
+        <div class="logo-container">
+            <i class="uil uil-brain"></i>
+            <h1>FlashLearn</h1>
+        </div>
+
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Quizzes</a></li>
+            </ul>
+        </nav>
+
+        <div class="socials-container">
+            <a href="" class="social">
+                <i class="uil uil-youtube"></i>
+            </a>
+            <a href="" class="social">
+            <i class="uil uil-twitter-alt"></i>
+            </a>
+            <a href="" class="social">
+            <i class="uil uil-facebook-f"></i>
+            </a>
+            <a href="" class="social">
+            <i class="uil uil-instagram"></i>
+            </a>
+            
+        </div>
+
+        </div>
+      </footer>
+      <div class="allrights">
+        <small>© 2025 Sanico. <span>Flashlearn.</span> All Rights Reserved.</small>
+      </div>
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.1/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/card.js"></script>
+</body>
+</html>
