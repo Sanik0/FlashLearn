@@ -381,10 +381,6 @@ nav ul li a {
     margin-bottom: 150px;
 }
 
-.offers .headings {
-
-}
-
 .offers .headings h1 {
     font-size: 64px;
     font-weight: var(--font-bold);
@@ -820,6 +816,10 @@ footer .socials-container .social:hover .uil {
     border-radius: 5px;
 }
 
+.toggle-btn {
+    display: none;
+}
+
 .sidebar .logo-container {
     display: flex;
     align-items: center;
@@ -1018,7 +1018,7 @@ footer .socials-container .social:hover .uil {
     gap: 25px;
 }
 
- .search-container {
+.search-container {
     background: var(--white-color);
     display: flex;
     align-items: center;
@@ -1107,6 +1107,7 @@ footer .socials-container .social:hover .uil {
     border-radius: 5px;
     gap: 5px;
     display: flex;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -4460,7 +4461,7 @@ footer .socials-container .social:hover .uil {
 /* =============================================================== TUTOR ===============================================================  */
 
 .main .main-content-container .chat-container {
-    height: 85vh;
+    height: 95vh;
 }
 
 .main .main-content-container .chat-container .conversation {
@@ -4480,6 +4481,18 @@ footer .socials-container .social:hover .uil {
 
 .main .main-content-container .chat-container .textbox-container .icon-container {
     min-width: 30px;
+    display: none;
+}
+
+
+
+.main .main-content-container .chat-container .textbox-container .input-container {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.main .main-content-container .chat-container .textbox-container .input-container textarea {
+    padding: 5px;
 }
 
 .main .main-content-container .chat-container .textbox-container .icon-send-container {
