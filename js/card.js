@@ -116,3 +116,20 @@ function DropdownMenu() {
     dropdown.style.display = "flex";
   }
 }
+// =========================================== SIDEBAR ===========================================
+
+const sidebar = document.getElementById("sidebar");
+const toggleBtn = document.getElementById("toggle-sidebar-Btn");
+const icon = toggleBtn.querySelector("i");
+
+function toggleSidebar() {
+  sidebar.classList.toggle("open");
+  
+  if (sidebar.classList.contains("open")) {
+      icon.classList.replace("uil-angle-right", "uil-angle-left");
+  } else {
+      icon.classList.replace("uil-angle-left", "uil-angle-right"); 
+  }
+}
+
+toggleBtn.addEventListener("click", toggleSidebar);
