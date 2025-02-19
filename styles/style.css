@@ -4478,6 +4478,10 @@ footer .socials-container .social:hover .uil {
     min-width: 30px;
 }
 
+.main .main-content-container .chat-container .textbox-container .icon-container {
+    min-width: 30px;
+}
+
 .main .main-content-container .chat-container .textbox-container .icon-send-container {
     min-width: 40px;
 }
