@@ -3,40 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Style and Size Changer</title>
+    <title>Sidebar with Icon Toggle</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <style>
-        .icon {
-            cursor: pointer;
-            margin: 5px;
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background-color: #ccc;
-            text-align: center;
-            line-height: 24px;
-            border-radius: 4px;
-            user-select: none;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .editable-div {
-            width: 100%;
-            height: 100px;
-            border: 1px solid #ccc;
-            padding: 5px;
-            overflow: auto;
-            font-size: 16px;
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            left: -250px; /* Initially hidden */
+            top: 0;
+            width: 250px;
+            height: 100vh;
+            background: #333;
+            color: white;
+            padding-top: 60px;
+            transition: left 0.3s ease-in-out;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            border-bottom: 1px solid #555;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Toggle button inside sidebar */
+        .toggle-btn {
+            position: absolute;
+            right: -40px; /* Positioned outside the sidebar */
+            top: 20px;
+            width: 40px;
+            height: 40px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 0 25px 25px 0;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toggle-btn:hover {
+            background: #555;
+        }
+
+        /* Sidebar open state */
+        .sidebar.open {
+            left: 0;
         }
     </style>
 </head>
 <body>
-    <form>
-        <div id="editableDiv" class="editable-div" contenteditable="true">Type here...</div><br>
-        <div class="icon" onclick="execCmd('bold')">B</div>
-        <div class="icon" onclick="execCmdWithArg('fontSize', '5')">A+</div>
-        <div class="icon" onclick="execCmdWithArg('fontSize', '3')">A-</div>
-    </form>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggleBtn">
+            <i class="uil uil-angle-right"></i>
+        </button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 
     <script>
-        
+        const sidebar = document.getElementById("sidebar");
+        const toggleBtn = document.getElementById("toggleBtn");
+        const icon = toggleBtn.querySelector("i");
+
+        function toggleSidebar() {
+            sidebar.classList.toggle("open");
+            
+            // Change the icon based on sidebar state
+            if (sidebar.classList.contains("open")) {
+                icon.classList.replace("uil-angle-right", "uil-angle-left"); // → to ←
+            } else {
+                icon.classList.replace("uil-angle-left", "uil-angle-right"); // ← to →
+            }
+        }
+
+        // Attach event listener
+        toggleBtn.addEventListener("click", toggleSidebar);
     </script>
+
 </body>
 </html>
