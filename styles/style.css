@@ -3750,15 +3750,43 @@ footer .socials-container .social:hover .uil {
 
 .sidebar {
     position: fixed;
-    display: none;
+    display: block;
+    z-index: 99;
     top: 0;
     left: 0;
     width: 200px;
-    height: 100vh;
+    height: 99vh;
+    left: -206px;
     background: var(--primary-color);
     margin: 5px ;
     border-radius: 5px;
+    transition: left 0.3s ease-in-out;
 }
+
+
+.toggle-btn {
+    position: absolute;
+    right: -35px; 
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0 25px 25px 0;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+
 
 .sidebar .logo-container {
     display: flex;
@@ -4428,6 +4456,46 @@ footer .socials-container .social:hover .uil {
   background: rgba(255, 255, 255, 0.2)!important; 
 }
 
+
+/* =============================================================== TUTOR ===============================================================  */
+
+.main .main-content-container .chat-container {
+    height: 85vh;
+}
+
+.main .main-content-container .chat-container .conversation {
+    gap: 20px;
+}
+
+.main .main-content-container .chat-container .conversation .tutor-message {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    gap: 5px;
+}
+
+.main .main-content-container .chat-container .conversation .tutor-message .img-container {
+    min-width: 30px;
+}
+
+.main .main-content-container .chat-container .textbox-container .icon-send-container {
+    min-width: 40px;
+}
+
+
+.main .main-content-container .chat-history-container {
+    width: 23%;
+    display: none;
+    height: 82vh;
+    background: var(--grey-light-color);
+    margin-top: 20px;
+    border-radius: 0 5px 5px 0;
+
+}
+
+.main .main-content-container .chat-history-container .search-create-container {
+    display: flex;
+}
 
  }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
