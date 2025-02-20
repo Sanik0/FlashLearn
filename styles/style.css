@@ -1689,7 +1689,10 @@ footer .socials-container .social:hover .uil {
 }
 
 /* =============================================================== TUTOR ===============================================================  */
-
+.main .tutor {
+    height: 98vh;
+    overflow: hidden;
+}
 .main .main-content-container .chat-container {
     position: relative;
     width: 100%;
@@ -1877,7 +1880,7 @@ footer .socials-container .social:hover .uil {
 
 .main .main-content-container .chat-history-container {
     width: 23%;
-    height: 82vh;
+    height: 100%;
     background: var(--grey-light-color);
     margin-top: 20px;
     border-radius: 0 5px 5px 0;
@@ -4510,8 +4513,71 @@ footer .socials-container .social:hover .uil {
 
 }
 
-.main .main-content-container .chat-history-container .search-create-container {
-    display: flex;
+
+/* =============================================================== CREATE FLASHCARDS ===============================================================  */
+.main .main-content-container .create-cards .textfields-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.main .main-content-container .create-cards .title-category {
+    flex-direction: column;
+}
+
+.main .main-content-container .create-cards  .textfield {
+    padding: 5px;
+}  
+
+
+
+.main .main-content-container .create-cards  textarea {
+    height: fit-content;
+    font-size: 16px;
+}
+
+.main .main-content-container .create-cards .textfield {
+    padding: 5px;
+}
+
+.main .main-content-container .create-cards .select {
+    height: fit-content;
+    width: 100%;
+}
+
+.main .main-content-container .create-cards .select select {
+    font-size: 16px;
+}
+
+.main .main-content-container .create-cards .card .term-definition {
+    flex-direction: column;
+}
+
+.main .main-content-container .create-card-btn {
+    padding: 10px;
+}
+
+.main .main-content-container  .create-card-btn h3 {
+    font-size: 20px;
+    font-weight: var(--font-medium);
+    color: var(--grey-dark-color);
+}
+
+.main .main-content-container .create-card-btn .uil {
+    font-size: 30px;
+    color: var(--grey-dark-color);
+}
+
+.main .main-content-container .create-card-btn:hover {
+    border: 3px solid var(--primary-color);
+}
+
+.main .main-content-container .create-btn-settings {
+    flex-direction: row-reverse;
+}
+
+.main .main-content-container .create-btn-settings .create-btn {
+    width: 100%;
 }
 
  }
