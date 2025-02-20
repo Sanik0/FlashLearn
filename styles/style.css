@@ -4529,8 +4529,6 @@ footer .socials-container .social:hover .uil {
     padding: 5px;
 }  
 
-
-
 .main .main-content-container .create-cards  textarea {
     height: fit-content;
     font-size: 16px;
@@ -4579,6 +4577,47 @@ footer .socials-container .social:hover .uil {
 .main .main-content-container .create-btn-settings .create-btn {
     width: 100%;
 }
+
+
+/* =============================================================== FLASHCARD ===============================================================  */
+.main .main-content-container .main-section {
+    max-width: 100%;
+    gap: 50px;
+}
+
+
+.main .main-content-container .flashcard-container .title h2 {
+    font-size: 20px;
+}
+
+.main .main-content-container .flashcard-container .card-container  {
+    height: fit-content;
+}
+
+.main .main-content-container .flashcard-container .card-container  .swiperFlashcard .swiper-wrapper .swiper-slide {
+    height: 300px;
+    padding: 0px 0px;
+}
+
+.main .main-content-container .definitions-terms-container .card {
+    flex-direction: column;
+}
+
+.main .main-content-container .definitions-terms-container .card .term {
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.main .main-content-container .definitions-terms-container .card .definition {
+    border-top: 2px solid var(--primary-color);
+    border-left: 0;
+    padding: 5px 10px;
+}
+
+
+
+
+
 
  }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
