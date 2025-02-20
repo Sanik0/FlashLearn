@@ -87,6 +87,7 @@ questions.forEach(question => {
   
     pagination: {
       el: '.swiper-pagination',
+      dynamicBullets: true,
     },
   
     navigation: {
