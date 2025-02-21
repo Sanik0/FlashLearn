@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>FlashLearn</title>
+</head>
+<body>
+
+    <!-- ============================================ SIDEBAR ============================================ -->
+
+    <section class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggle-sidebar-Btn">
+            <i class="uil uil-angle-right"></i>
+        </button>
+        <div class="logo-container">
+            <i class="uil uil-brain"></i>
+            <h1>FlashLearn</h1>
+        </div>
+
+        <div class="profile-container">
+
+            <div class="profile">
+                <div class="img-container">
+                    <img src="resources/pfp.jpg" alt="">
+                </div>
+    
+                <div class="username-role">
+                    <h3>Sanico</h3>
+                    <p>Admin</p>
+                </div>
+            </div>
+
+            <a href="edit-profile.html" class="settings">
+                <i class="uil uil-cog"></i>
+            </a>
+            
+        </div>
+
+        <div class="sidebar-nav">
+            <a href="index.html" class="nav-link">
+                <i class="uil uil-users-alt"></i>
+                <h4>Manage Users</h4>
+            </a>
+            <a href="manage-cards.html" class="nav-link">
+                <i class="uil uil-layers"></i>
+                <h4>Manage Cards</h4>
+            </a>
+            <a href="manage-posts.html" class="nav-link">
+                <i class="uil uil-clipboard-notes"></i>
+                <h4>Manage Posts</h4>
+            </a>
+        </div>
+
+        <div class="learn">
+            <h4>Learn</h4>
+        </div>
+
+        <div class="sidebar-nav">
+            <a href="explore.html" class="nav-link">
+                <i class="uil uil-compass"></i>
+                <h4>Explore</h4>
+            </a>
+            <a href="tutor.html" class="nav-link">
+                <i class="uil uil-comment"></i>
+                <h4>AI Tutor</h4>
+            </a>
+        </div>
+
+        <div class="create">
+            <i class="uil uil-pen"></i>
+            <h4>Create</h4>
+        </div>
+
+    </section>
+
+    <!-- ============================================ MAIN ============================================ -->
+
+    <section class="main">
+
+           <!-- ============================================ HEADER ============================================ -->
+
+    <section class="header">
+        <div class="heading">
+            <h1>Welcome, Sanico</h1>
+            <h4>You can start exploring FlashLearn using the menu on the left</h4>
+        </div>
+
+        <div class="search-logout-container">
+            <div class="search-container">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for topics...">
+            </div>
+
+            <a href="#" class="logout">
+                <h3>Logout</h3>
+                <i class="uil uil-signout"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="main-content-container flex-col">
+        <div class="filter-add-container">
+            <a href="create-user.html" class="add-new">
+                <i class="uil uil-user-plus"></i>
+                Add New User
+            </a>
+            <div class="filter-container">
+                <i class="uil uil-filter"></i>
+                <select class="table-filter">
+                    <option value="Filter">Filter</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="table">
+
+            <table id="myTable">
+                <tr>
+                    <th>First Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Birthdate</th>
+                    <th>Account Type</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td class="image">
+                        <div class="img-container">
+                            <img src="../resources/28e710d424d449e17a6125c8edeac628.jpg" alt="">
+                        </div> Jean Smith
+                    </td>
+                    <td>Itsitzyyy123</td>
+                    <td>jean123@gmail.com</td>
+                    <td>12 Jun 2004</td>
+                    <td>Student</td>
+                    <td class="status">
+                        <div class="status-container active">
+                            Active
+                        </div>
+                    </td>
+                    <td class="action">
+                            <div class="icon-container">
+                                <i class="uil uil-edit-alt"></i>
+                            </div>
+                            <div class="icon-container">
+                                <i class="uil uil-trash-alt"></i>
+                            </div>
+                    </td>
+                </tr>
+               
+            </table>
+        </div>
+    </section>
+
+
+    </section>
+
+
+ 
+
+
+    <script src="../js/card.js"></script>
+      <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>FlashLearn</title>
+</head>
+<body>
+
+    <!-- ============================================ SIDEBAR ============================================ -->
+    <section class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggle-sidebar-Btn">
+            <i class="uil uil-angle-right"></i>
+        </button>
+        <div class="logo-container">
+            <i class="uil uil-brain"></i>
+            <h1>FlashLearn</h1>
+        </div>
+
+        <div class="profile-container">
+
+            <div class="profile">
+                <div class="img-container">
+                    <img src="resources/pfp.jpg" alt="">
+                </div>
+    
+                <div class="username-role">
+                    <h3>Sanico</h3>
+                    <p>Admin</p>
+                </div>
+            </div>
+
+            <a href="edit-profile.html" class="settings">
+                <i class="uil uil-cog"></i>
+            </a>
+            
+        </div>
+
+        <div class="sidebar-nav">
+            <a href="index.html" class="nav-link">
+                <i class="uil uil-users-alt"></i>
+                <h4>Manage Users</h4>
+            </a>
+            <a href="manage-cards.html" class="nav-link">
+                <i class="uil uil-layers"></i>
+                <h4>Manage Cards</h4>
+            </a>
+            <a href="manage-posts.html" class="nav-link">
+                <i class="uil uil-clipboard-notes"></i>
+                <h4>Manage Posts</h4>
+            </a>
+        </div>
+
+        <div class="learn">
+            <h4>Learn</h4>
+        </div>
+
+        <div class="sidebar-nav">
+            <a href="explore.html" class="nav-link">
+                <i class="uil uil-compass"></i>
+                <h4>Explore</h4>
+            </a>
+            <a href="tutor.html" class="nav-link">
+                <i class="uil uil-comment"></i>
+                <h4>AI Tutor</h4>
+            </a>
+        </div>
+
+        <div class="create">
+            <i class="uil uil-pen"></i>
+            <h4>Create</h4>
+        </div>
+
+    </section>
+ 
+    <!-- ============================================ MAIN ============================================ -->
+
+    <section class="main">
+
+    <!-- ============================================ HEADER ============================================ -->
+
+    <section class="header">
+        <div class="heading">
+            <h1>Create Flashcards</h1>
+            <h4>You can start exploring FlashLearn using the menu on the left</h4>
+        </div>
+
+        <div class="search-logout-container">
+            <a href="#" class="logout">
+                <h3>Logout</h3>
+                <i class="uil uil-signout"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================ MAIN CONTENT ============================================ -->
+
+
+    <section class="main-content-container width-100">
+        <form action="submit" class="create-cards" id="cardContainer">
+            <div class="textfields-container">
+                <div class="title-category">
+                    <div class="textfield">
+                        <textarea name="" class="growingTextarea" rows="1" placeholder="Enter title, like “Biology - Chapter 22: Evolution"></textarea>
+                    </div>
+                    <div class="textfield select">
+                        <select name="" id="">
+                            <option value="none">Select category</option>
+                            <option value="Biology">Biology</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="textfield">
+                    <textarea name="" class="growingTextarea" rows="1" placeholder="Add description"></textarea>
+                </div>
+
+            </div>
+            
+
+            <div class="card">
+                <div class="term-definition">
+                    <div class="term">
+                        <h4>Term</h4>
+                        <div class="textfield grey">
+                            <textarea name="" class="growingTextarea" rows="1" ></textarea>
+                        </div>
+
+                    </div>
+                    <div class="term">
+                        <h4>Definition</h4>
+                        <div class="textfield grey">
+                            <textarea name="" class="growingTextarea" rows="1"></textarea>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-actions">
+                    <h3>1</h3>
+                    <div class="actions">
+                        <a href="#" class="icon-container">
+                            <i class="uil uil-image"></i>
+                        </a>
+                        <!-- <a href="#" class="icon-container">
+                            <i class="uil uil-trash-alt"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="term-definition">
+                    <div class="term">
+                        <h4>Term</h4>
+                        <div class="textfield grey">
+                            <textarea name="" class="growingTextarea" rows="1" ></textarea>
+                        </div>
+
+                    </div>
+                    <div class="term">
+                        <h4>Definition</h4>
+                        <div class="textfield grey">
+                            <textarea name="" class="growingTextarea" rows="1"></textarea>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-actions">
+                    <h3>1</h3>
+                    <div class="actions">
+                        <a href="#" class="icon-container">
+                            <i class="uil uil-image"></i>
+                        </a>
+                        <!-- <a href="#" class="icon-container">
+                            <i class="uil uil-trash-alt"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+            </div>
+
+           
+        </form>
+
+        <div class="create-card-btn" onclick="addCard()">
+            <h3>ADD ANOTHER CARD</h3>
+            <i class="uil uil-plus-circle"></i>
+        </div>
+        <div class="create-btn-settings">
+            <div class="icon-container">
+                <i class="uil uil-cog"></i>
+            </div>
+            <div class="create-btn">
+                Create
+            </div>
+        </div>
+
+        
+        
+
+        
+
+
+
+    </section>
+
+
+    </section>
+
+
+ 
+
+
+      <script src="../js/card.js"></script>
+      <script src="../js/script.js"></script>
+</body>
+</html>
