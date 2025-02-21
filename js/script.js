@@ -35,29 +35,33 @@ questions.forEach(question => {
 });
 
 // =========================================== SWIPER ===========================================
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  direction: 'horizontal',
+  loop: false,
 
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 5,
-    spaceBetween: 10,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 
-    direction: 'horizontal',
-    loop: false,
-  
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+  breakpoints: {
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    }
+  }
+});
+
 
   const swiperTestimonial = new Swiper('.swiperTestimonial', {
     slidesPerView: 1,
@@ -86,7 +90,7 @@ questions.forEach(question => {
     loop: false,
   
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       dynamicBullets: true,
     },
   
